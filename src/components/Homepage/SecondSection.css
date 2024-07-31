@@ -1,0 +1,153 @@
+.second-section{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    background-image: url('../../../src/assests/Rectangle 73.png');
+}
+
+.first-part{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-self: flex-end;
+    height: 100vh;
+}
+
+.first-part-paragraph-one{
+    font-family: ABeeZee;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.18px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.first-part-heading{
+    font-family: ABeeZee;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.first-part-paragraph-two{
+    font-family: Sailec;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.second-part{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    
+    /* align-items: self-start; */
+    /* grid-template-rows: 2fr 2fr; */
+}
+
+.first-part-section{
+    width: 510px;
+    height: 238px;
+    top: 622px;
+    left: 40px;
+    gap: 30px;
+    padding-left: 40px;
+    padding-left: 20px;
+}
+
+.second-part-one{
+    opacity: 0px;
+    flex: 1;
+}
+
+
+.second-part-hover{
+    opacity: 0px;
+    flex: 1;
+    background-color: #FFFFFF;
+}
+
+.second-part-align-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 4px;
+}
+
+.heading-part{
+    font-family: ABeeZee;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 21.6px;
+    text-align: left;
+    color:#FFFFFF
+}
+
+.heading-part-hover{
+    font-family: ABeeZee;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 21.6px;
+    text-align: left;
+    color:black
+}
+
+
+.second-part-paragraph{
+font-family: Sailec;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+text-align: left;
+color: #FFFFFF
+}
+
+.second-part-paragraph-hover{
+font-family: Sailec;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+text-align: left;
+color: black;
+}
+
+.button-align{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+}
+
+.horizontal-line{
+    width: 100px;
+    border-color: yellow;
+    text-align: left;
+}
+
+.line{
+    border-color: gray;
+}
+
+.change-div-container{
+    color: black;
+    background-color: #FFFFFF;
+}
+
+.hover-div{
+    background-image: url('../../../src/assests/hoverstate1.jpg');
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+.hover-div-one{
+    background-image: url('../../../src/assests/hoverstate2.jpg');
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}

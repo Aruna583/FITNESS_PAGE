@@ -1,0 +1,39 @@
+.footer-container{
+    background: #000000;
+    height: 100vh;
+    width: 100vw;
+}
+
+.service-heading{
+color:#C79D5B;
+font-family: ABeeZee;
+font-size: 12px;
+font-weight: 400;
+line-height: 14.18px;
+letter-spacing: 0.02em;
+text-align: left;
+}
+
+.service-label{
+font-family: Sailec;
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+text-align: left;
+color: #ffff;
+}
+
+.unorder-list-container{
+    list-style-type: none;
+}
+.div-container{
+    height: 180px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+}
+
+.service-container{
+    width: 360px;
+    gap:25px;
+}
