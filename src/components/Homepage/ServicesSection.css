@@ -1,0 +1,154 @@
+.services-section-div-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.main-heading{
+font-family: ABeeZee;
+font-size: 12px;
+font-weight: 400;
+line-height: 14.18px;
+letter-spacing: 0.02em;
+text-align: left;
+color: black;
+padding: 30px
+}
+@media screen and (max-width: 600px){
+    .services-details-section{
+        width: 100vw;
+        padding: 20px;
+
+    }
+
+    .services-section-para{
+        font-size: 16px;
+    }
+
+    .exclusive-services-section{
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+    .services-section-div-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .services-first-div-container{
+        width: 100%;
+    }
+    .image-container{
+       width: 100%;
+    }
+
+    .servises-section-second-div-container{
+        width: 100vw;
+    }
+   
+    .exclusive-services-section{
+        width: 100vw;
+        padding: 20px;
+    }
+
+    
+}
+
+@media screen and (min-width: 768px) {
+    .services-details-section {
+        width: 500px;
+        height: 256px;
+        padding: 20px;
+
+    }
+
+    .servises-section-second-div-container{
+        /* width:50vw; */
+        display: flex;
+        flex-direction: row;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #E6E6E6;
+    }
+
+    .exclusive-services-section{
+        padding-top: 28px;
+        padding-left: 28px;
+        width: 220px;
+        height: 256px;
+    }
+
+
+}
+.services-first-div-container{
+    width: 50%;
+}
+
+.services-section-heading{
+    font-family: ABeeZee;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: left;
+    color: black
+}
+
+.services-section-para{
+    width: 420px;
+height: 72px;
+    font-family: Sailec;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    color: black;
+}
+
+
+.image-container{
+width: 100%;
+height: 400px;
+}
+
+.services-section-last-para{
+    width: 216px;
+    height: 34px;
+    color:#00000066;
+
+}
+
+.exclusive-services-section{
+    width: 100vw;
+gap: 15px;
+opacity: 0px;
+border-left: 1px solid #E6E6E6
+}
+
+.exclusive-services-heading{
+    font-family: ABeeZee;
+font-size: 12px;
+font-weight: 400;
+line-height: 14.18px;
+letter-spacing: 0.02em;
+text-align: left;
+color: #C79D5B;
+}
+
+.exclusive-services-para{
+    font-family: Sailec;
+font-size: 14px;
+font-weight: 400;
+line-height: 21px;
+text-align: left;
+color: black;
+}
+
+.check-icon{
+    padding-top:8px;
+    padding-right:4px;
+}
+
+.service-img-container{
+    display: flex;
+}

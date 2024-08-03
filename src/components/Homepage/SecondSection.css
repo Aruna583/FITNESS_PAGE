@@ -1,17 +1,116 @@
 .second-section{
     height: 100vh;
     width: 100vw;
-    display: flex;
     background-image: url('../../../src/assests/Rectangle 73.png');
 }
 
+@media screen and (min-width: 768px){
+     .hover-div{
+        background-image: url('../../../src/assests/hoverstate1.jpg');
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+    }
+    
+    .hover-div-one{
+        background-image: url('../../../src/assests/hoverstate2.jpg');
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+    }
+
+    .second-section{
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        background-image: url('../../../src/assests/Rectangle 73.png');
+    }
+
+    .first-part{
+        width: 50vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-self: flex-end;
+        height: 100vh;
+    }
+    .second-part{
+        width: 50vw;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .second-part-paragraph{
+        display: none;
+    }
+
+    .second-part-paragraph-hover{
+        display: none;
+    }
+
+    .heading-division{
+        display: none;
+    }
+
+    /* .line{
+        border-color: gray;
+        display: none;
+    } */
+}
+
+
+@media screen and (max-width: 750px) {
+    .second-part-paragraph{
+        display: none;
+    }
+    .second-part-paragraph-hover{
+        display: none;
+    }
+    .second-part{
+        padding-top: 240px;
+    }
+    .join-us-alignment{
+        display: none;
+    }
+
+    .first-part-heading{
+        font-size: 32px;
+    }
+}
+
+@media screen and (min-width: 968px){
+    .second-part-paragraph{
+        font-family: Sailec;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+        color: #FFFFFF;
+        display: block;
+        padding-left: 19px;
+        }
+        
+        .second-part-paragraph-hover{
+        font-family: Sailec;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+        display: block;
+        padding-left: 19px;
+        color: black;
+        }
+
+        .second-part{
+            padding: 0px;
+        }
+
+}
+
 .first-part{
-    width: 50vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-self: flex-end;
-    height: 100vh;
+    width: 100%;
+    padding: 4px;
 }
 
 .first-part-paragraph-one{
@@ -43,16 +142,11 @@
 }
 
 .second-part{
-    width: 50vw;
-    display: flex;
-    flex-direction: column;
-    
-    /* align-items: self-start; */
-    /* grid-template-rows: 2fr 2fr; */
+    width: 100%;
 }
 
 .first-part-section{
-    width: 510px;
+    width: full;
     height: 238px;
     top: 622px;
     left: 40px;
@@ -61,6 +155,15 @@
     padding-left: 20px;
 }
 
+.heading-division-one{
+    display: flex;
+    justify-content: space-between;
+}
+
+.arrow-display{
+    height: 16px;
+    width: 18px;
+}
 .second-part-one{
     opacity: 0px;
     flex: 1;
@@ -86,7 +189,8 @@
     font-weight: 400;
     line-height: 21.6px;
     text-align: left;
-    color:#FFFFFF
+    color:#FFFFFF;
+    padding-left: 19px;
 }
 
 .heading-part-hover{
@@ -95,26 +199,8 @@
     font-weight: 400;
     line-height: 21.6px;
     text-align: left;
-    color:black
-}
-
-
-.second-part-paragraph{
-font-family: Sailec;
-font-size: 16px;
-font-weight: 400;
-line-height: 24px;
-text-align: left;
-color: #FFFFFF
-}
-
-.second-part-paragraph-hover{
-font-family: Sailec;
-font-size: 16px;
-font-weight: 400;
-line-height: 24px;
-text-align: left;
-color: black;
+    color:black;
+    padding-left: 19px;
 }
 
 .button-align{
@@ -129,9 +215,7 @@ color: black;
     text-align: left;
 }
 
-.line{
-    border-color: gray;
-}
+
 
 .change-div-container{
     color: black;
@@ -142,12 +226,10 @@ color: black;
     background-image: url('../../../src/assests/hoverstate1.jpg');
     height: 100vh;
     width: 100vw;
-    display: flex;
 }
 
 .hover-div-one{
     background-image: url('../../../src/assests/hoverstate2.jpg');
     height: 100vh;
     width: 100vw;
-    display: flex;
 }

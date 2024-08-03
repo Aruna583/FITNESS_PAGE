@@ -1,0 +1,48 @@
+.footer-last-section-container{
+
+    background-color: black;
+}
+
+@media (min-width: 767px) {
+    .footer-last-section-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: black;
+        padding: 20px;
+    }
+    .footer-icons-section{
+        display: flex;
+        justify-content: space-between;
+        gap:4px;
+        color: white;
+    }
+
+    .footer-last{
+        padding: 15px 0;
+    }
+}
+
+.footer-icons-section{
+    display: flex;
+    gap:4px;
+    color: white;
+}
+
+
+
+.horizontal-last-section{
+    padding-bottom: 4px;
+    height: 14px;
+    margin: 4px;
+}
+
+.footer-last{
+    bottom: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}

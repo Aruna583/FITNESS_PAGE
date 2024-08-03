@@ -46,3 +46,9 @@ text-align: left;
 color: #ffff;
 
 }
+
+@media screen and (min-width: 600px) {
+    .home-page-icon-one{
+        display: none;
+    }
+}

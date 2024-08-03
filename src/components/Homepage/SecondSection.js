@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import './SecondSection.css';
 import ButtonElement from '../../utils/ButtonElement';
-import ArrowIcon from '../../assests/arrowIcon.svg'
+import ArrowIcon from '../../assests/arrowIcon.svg';
+import ArrowBlackIcon from '../../assests/Rectangle 6.png'
 
 const SecondSection = () => {
     const [ishovered, setHover] = useState(false);
@@ -9,7 +10,7 @@ const SecondSection = () => {
     const [divtwo, setDivTwo] = useState(false)
 
   return (
-    <div className={ishovered ? divOne ? 'hover-div': 'hover-div-one' : 'second-section'}>
+    <div className={ishovered ? (divOne ? 'hover-div': 'hover-div-one') : 'second-section'}>
         <div className='first-part'>
            <div className='first-part-section'>
            <p className='first-part-paragraph-one'>FITNESS & WORKOUT</p>
@@ -25,7 +26,7 @@ const SecondSection = () => {
             borderStyle="solid"
             />
            </div>
-           <hr className='line'/>
+           {/* <hr className='line'/> */}
         </div>
         
         <div className='second-part'>
@@ -36,6 +37,15 @@ const SecondSection = () => {
                 setDivTwo(false)
              }}
             >
+                <div className='heading-division'>
+                <hr className='heading-div-horizontal-line'/>
+                <div className='heading-division-one'>
+                <span className='heading-part'>YOGA</span>
+                <img src={ArrowIcon} alt='arrow-ele' className='arrow-display'/>
+                </div>
+                </div>
+
+                <div className='join-us-alignment'>
                 <span className='heading-part'>YOGA</span>
                 <p className='second-part-paragraph'>Find your breath, flow, and turn up the heat!</p>
                 <div className='button-align'>
@@ -47,9 +57,8 @@ const SecondSection = () => {
                 color="#ffff"
                 borderStyle='none'
                 />
-                
                 </div>
-                
+                </div>    
             </div>
             <div className={ishovered && divOne ? 'second-part-hover second-part-align-items' : 'second-part-one second-part-align-items'} 
             onMouseEnter={() => {
@@ -58,14 +67,22 @@ const SecondSection = () => {
                setDivTwo(false)
             }} 
             >
-            
+                <div className='heading-division'>
+                <hr className='heading-div-horizontal-line'/>
+                <div className='heading-division-one'>
+                <span className={divOne ? 'heading-part-hover': 'heading-part'}>HIIT</span>
+                <img src={divOne ? ArrowBlackIcon :ArrowIcon} alt='arrow-ele' className='arrow-display'/>
+                </div>
+                </div>
+
+                <div className='join-us-alignment'>
                 <h1 className={divOne ? 'heading-part-hover': 'heading-part'}>HIIT</h1>
                 <p className={divOne ? 'second-part-paragraph-hover':'second-part-paragraph'}>HIIT hard while having the time of your life.</p>
                 <div className='button-align'>
                     <div>
                     <ButtonElement 
                     label='JOIN US'
-                    rightIcon={ArrowIcon}
+                    rightIcon={divOne? ArrowBlackIcon:ArrowIcon}
                     backgroundColor='transparent'
                     border='none'
                     color={divOne ?'black' :"#ffff"}
@@ -76,7 +93,7 @@ const SecondSection = () => {
                     {divOne && <hr className='horizontal-line'/>}
                     </div>
                 </div>
-                
+                </div>
             </div>
             <div 
             className={ishovered && divtwo ? 'second-part-hover second-part-align-items' : 'second-part-one second-part-align-items'}
@@ -86,14 +103,24 @@ const SecondSection = () => {
                 setDivTwo(true)
              }}
             >
+
+                <div className='heading-division'>
+                <hr className='heading-div-horizontal-line'/>
+                <div className='heading-division-one'>
+                <span className={divtwo ? 'heading-part-hover': 'heading-part'}>RIDE</span>
+                <img src={divtwo ? ArrowBlackIcon :ArrowIcon} alt='arrow-ele' className='arrow-display'/>
+                </div>
+                </div>
             
+                
+                <div className='join-us-alignment'>
                 <h1 className={divtwo ? 'heading-part-hover': 'heading-part'}>RIDE</h1>
                 <p className={divtwo ? 'second-part-paragraph-hover':'second-part-paragraph'}>Race past your goals and get lost in the beat.</p>
                 <div className='button-align'>
                     <div>
                     <ButtonElement 
                     label='JOIN US'
-                    rightIcon={ArrowIcon}
+                    rightIcon={divtwo ? ArrowBlackIcon :ArrowIcon}
                     backgroundColor='transparent'
                     border='none'
                     color={divtwo ?'black' :"#ffff"}
@@ -104,6 +131,7 @@ const SecondSection = () => {
                     <div>
                     {divtwo && <hr className='horizontal-line'/>}
                     </div>
+                </div>
                 </div>
             </div>
         </div>

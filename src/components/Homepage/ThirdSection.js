@@ -11,11 +11,12 @@ const ThirdSection = () => {
     const overFlowCount = data.length-displayCount;
 
   return (
-    <div className='div-container'>
-        <div className='first-section'>
-        <div className='first-part-section'>
-           <p className='first-part-paragraph-one'>WELLNESS & SPA SERVICES</p>
-            <span className='first-part-heading'>TAKE WELLNESS & RECOVERY TO A WHOLE NEW LEVEL</span>
+    <div className='third-section-div-container'>
+        <div className='third-first-section'>
+          <div className='first-part-third-section'>
+           <p className='first-part-paragraph-third-section'>WELLNESS & SPA SERVICES</p>
+            <p className='first-part-third-section-heading'>TAKE WELLNESS & RECOVERY 
+            TO A WHOLE NEW LEVEL</p>
             <p className='first-part-paragraph-two'>Full-service premium amenities. Just bring you, and we do the rest!</p>
             <ButtonElement 
             label="EXPLORE SPA & WELLNESS"
@@ -27,15 +28,15 @@ const ThirdSection = () => {
             borderColor='#ffff'
             borderStyle="solid"
             />
-           </div>
+          </div>
         </div>
-        <div className='second-section'>
-            <div className='unorder-list-container'>
+        <div className='second-section-list-items'>
+            <div className='unorder-list-container-third-section'>
             <ul>
                 {displayData.map((item) => (
                     <li key={item.id} className='list-items'>
                         {console.log(item.label)}
-                        <hr className='horizontal-line'/>
+                        <hr className='horizontal-line-third-section'/>
                         <div className='list-div-contianer'>
                         <span className='list-item-label'>{item.label}</span>
                         {item.secondlabel && <span className='list-item-label'>{item.secondlabel}</span>}
@@ -44,7 +45,7 @@ const ThirdSection = () => {
                 ))}
             </ul>
             <div>
-            <hr className='horizontal-line'/>
+            <hr className='horizontal-line-third-section'/>
             <div className='list-div-contianer'>
             {isOverFlow && <span className='list-item-label'>+{overFlowCount}MORE</span>}
             <span className='arrow-element'>

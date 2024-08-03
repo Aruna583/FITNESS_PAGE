@@ -23,7 +23,7 @@ text-align: left;
 color: #ffff;
 }
 
-.unorder-list-container{
+.unorder-list-container-third-section{
     list-style-type: none;
 }
 .div-container{
@@ -36,4 +36,8 @@ color: #ffff;
 .service-container{
     width: 360px;
     gap:25px;
+}
+
+@media screen and (min-width: 768px) {
+    
 }
